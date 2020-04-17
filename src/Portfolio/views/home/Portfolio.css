@@ -1,0 +1,7 @@
+/* import fonts from fonts.css file */
+@import url(../../css/fonts.css);
+
+/* css variables */
+@import url(../../css/partials/_variables.css);
+/* global */
+@import url(../../css/partials/_global.css);

@@ -1,0 +1,19 @@
+/* footer area */
+footer.footer-area {
+    padding: 1rem 0;
+    background: url(../../media/footer-bg.png) no-repeat;
+}
+footer.footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+}
+footer.footer-area .social a > .i {
+    /* font-size: 22px;
+    padding: 2rem; */
+    font-size: 33px;
+    margin: 1rem 2rem;
+    color: var(--border-color);
+}
+footer.footer-area .social a:hover > .i {
+    color: var(--primary-color);
+}
+/* end footer area */
