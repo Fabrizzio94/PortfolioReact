@@ -5,3 +5,11 @@
 @import url(../../css/partials/_variables.css);
 /* global */
 @import url(../../css/partials/_global.css);
+
+
+/* medias query for responsive */
+@media only screen and (max-width: 340px) {
+    .header_area .main-menu .navbar {
+        padding: 1.5rem 0rem 0rem 0rem; /*20rem*/
+    }
+}

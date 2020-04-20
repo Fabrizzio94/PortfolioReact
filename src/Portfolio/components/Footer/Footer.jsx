@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="footer-area">
             <div className="container">
             <div className="site-logo text-center py-4">
-                    <Link href="#"><img src={require("../../media/logo.png")} alt="logo"/></Link>
+                    <Link to="/"><img src={require("../../media/logo.png")} alt="logo"/></Link>
             </div>
                 <div className="social text-center">
                     <h5 className="text-uppercase">Follow me</h5>
@@ -20,8 +20,7 @@ const Footer = () => {
                 </div>
                 <div className="copyrights text-center">
                     <p className="para">
-                        Copyright 2020 All rights reserved | This template is made with by 
-                        <Link href="#"><span>Daily Tuit</span></Link>
+                        Copyright © 2020 All rights reserved
                     </p>
                 </div>
             </div>

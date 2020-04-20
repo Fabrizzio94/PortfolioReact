@@ -1,0 +1,25 @@
+
+/* contact area */
+.site-main .contact-area .contact {
+    margin-top: 1.6rem;
+    border-radius: 0.25rem;
+    width: 45%;
+    box-shadow: 1px 8px 30px #b1afaf;
+}
+.site-main .contact-area .contact .subscribe-title {
+    margin-top: 2rem;
+}
+.site-main .contact-area .contact .contact-form {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.site-main .contact-area .contact .message-text  {
+    resize: none;
+}
+.site-main .contact-area .contact .btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+/* end contact area */

@@ -13,7 +13,12 @@ footer.footer-area .social a > .i {
     margin: 1rem 2rem;
     color: var(--border-color);
 }
+footer.footer-area .social a:hover:nth-child(0n+4) .i {
+    /* font-size:30px; */
+    color:black;
+}
 footer.footer-area .social a:hover > .i {
     color: var(--primary-color);
 }
+
 /* end footer area */
