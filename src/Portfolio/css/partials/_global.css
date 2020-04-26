@@ -76,8 +76,31 @@ button:hover,
     top: -1px;
     left: 0;
     right: 0;
+    padding-left: 8rem;
     background: #ffffffff;
     box-shadow: var(--box-shadow);
     z-index: 999;
-    transition: background 1s ease;
+    transition: background .5s ease;
+    animation: moveDown 0.5s ease-in-out;
 }
+.nav-animate {
+    width: 2rem;
+    height: 3.5rem;
+    animation: rotate 0.7s ease-in-out 0.4s;
+}
+@keyframes moveDown {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0rem);
+    }
+}
+@keyframes rotate {
+    0% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(0rem);
+    }
+  }

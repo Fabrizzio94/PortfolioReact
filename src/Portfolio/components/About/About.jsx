@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import './About.css'
-const About =  () => {
+const About =  ({stickyRef}) => {
+    useEffect(() => {
+        stickyRef.current.focus()
+    })
     return(
         <main className="site-main">
-            <section className="about-area">
+            <section ref={stickyRef} className="about-area">
                 <div className="container-fluid">
                     <div className="row">
-                    <div className="col-lg-6 col-md-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="about-image">
-                        <img src={require("../../media/about-us.png")} alt="About us" className="img-fluid"/>
+                        {/* <img src={require("../../media/about-us.png")} alt="About us" className="img-fluid"/> */}
+                        <img src={require("../../media/about-me.svg")} alt="About us" className="img-fluid"/>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 about-title">
+                    <div className="col-lg-6 col-md-12 col-sm-12 about-title">
                         <h2 className="text-uppercase pt-5">
                         <span>let me</span>
                         <span>introduce</span>

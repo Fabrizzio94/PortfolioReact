@@ -3,6 +3,11 @@ footer.footer-area {
     padding: 1rem 0;
     background: url(../../media/footer-bg.png) no-repeat;
 }
+footer.footer-area .site-logo img {
+    width: 77px;
+    height: 57px;
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #3b1ad8);
+}
 footer.footer-area .social h5 {
     font: normal 500 23px/30px var(--roboto);
 }

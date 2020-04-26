@@ -3,13 +3,16 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 import './Header.css'
-// import { Navbar } from 'react-bootstrap';
-const Header = () => {
+//import $ from 'jquery'
+
+// sticky navigation menu
+
+const Header = ({ sticky }) => {
     return (
         <header className="header_area">
-            <div className="main-menu">
-                <nav className="navbar navbar-expand-md navbar-light">
-                    <Link  to="/" className="navbar-brand" href=""><img src={require('../../media/logo.png')} alt="logo"/></Link>
+            <div className={ sticky ? "navbar_fixed main-menu": "main-menu"}>
+                <nav className={sticky ? "navbar navbar-expand-md navbar-light navbar-fixed-on-sticky" : "navbar navbar-expand-md navbar-light"}>
+                    <Link  to="/" className={ sticky ? "nav-animate" : "navbar-brand"} ><img src={require('../../media/logo.svg')} alt="logo"/></Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -18,17 +21,17 @@ const Header = () => {
                         <div className="mr-auto"></div>
                         
                             <ul className="navbar-nav">
-                                <li className="nav-item ">
-                                    <Link className="nav-link" to="/">Home<span className="sr-only">(current)</span></Link>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" exact to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" activeClassName="active" to="/about">about</NavLink>
+                                    <NavLink className="nav-link" to="/about" >about</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/portfolio">portfolio</Link>
+                                    <NavLink className="nav-link" to="/portfolio" >portfolio</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">contact</Link>
+                                    <NavLink className="nav-link" to="/contact">contact</NavLink>
                                 </li>
 
                             </ul>

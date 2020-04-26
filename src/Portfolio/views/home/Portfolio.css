@@ -9,7 +9,19 @@
 
 /* medias query for responsive */
 @media only screen and (max-width: 340px) {
+
+    /* header */
     .header_area .main-menu .navbar {
-        padding: 1.5rem 0rem 0rem 0rem; /*20rem*/
+        padding: 1rem 1rem 0rem;
+    }
+    .header_area .main-menu .navbar a {
+        padding: 0rem 6rem 0rem 0rem;
+    }
+    /* contact */
+    .site-main .contact-area .contact {
+        width: 95%;
+    }
+    .site-main .contact-area .contact p {
+        padding: 1rem 1rem 0rem;
     }
 }

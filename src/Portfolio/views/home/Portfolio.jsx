@@ -1,18 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Routes from '../../Routes'
 import './Portfolio.css'
 import '../../css/partials/_variables.css'
 import '../../css/partials/_global.css'
+import ScrollToTop from './ScrollToTop'
 const Portfolio = () => {
+// function Portfolio() {
+    useEffect(() => {
+        return () => {
+            window.removeEventListener("scroll", () => handleScroll)
+        }
+    }, [])
+    
+    const [isSticky, setSticky] = useState(false)
+    var stickyRef = useRef(null)
+    const handleScroll = () => {
+        if(stickyRef.current){
+            window.pageYOffset > stickyRef.current.getBoundingClientRect().top
+            ? setSticky(true)
+            : setSticky(false)
+        }
+    }
+    
+
+    window.addEventListener("scroll", handleScroll)
     return (
         <>
-            <Header/>
-            <Routes/>
+            <Header sticky={isSticky} />
+            <ScrollToTop />
+            <Routes stickyRef={stickyRef} />
             <Footer/>
         </>
     )
 }
 
 export default Portfolio
+
