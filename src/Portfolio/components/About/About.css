@@ -14,5 +14,6 @@
 
 .site-main .about-area .about-title .paragraph > p {
     padding: .4rem 0;
+    text-align: justify;
 }
 /* end about area */

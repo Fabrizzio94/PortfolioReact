@@ -12,7 +12,7 @@ const Banner = ({stickyRef}) => {
                     <div className="col-lg-6 col-md-12 site-title">
                         <h3 className="title-text">Hey</h3>
                         <h1 className="title-text text-uppercase">I am fabricio</h1>
-                        <h4 className="title-text text-uppercase">Junio developer</h4>
+                        <h4 className="title-text text-uppercase">Junior Developer</h4>
                         <div className="site-buttons">
                         <div className="d-flex flex-row flex-wrap">
                             <button type="button" className="btn button primary-button mr-4 text-uppercase">hire me</button>

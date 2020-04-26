@@ -9,7 +9,7 @@ const About =  ({stickyRef}) => {
             <section ref={stickyRef} className="about-area">
                 <div className="container-fluid">
                     <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 container-about">
                         <div className="about-image">
                         {/* <img src={require("../../media/about-us.png")} alt="About us" className="img-fluid"/> */}
                         <img src={require("../../media/about-me.svg")} alt="About us" className="img-fluid"/>

@@ -8,20 +8,95 @@
 
 
 /* medias query for responsive */
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 375px) {
 
     /* header */
     .header_area .main-menu .navbar {
-        padding: 1rem 1rem 0rem;
+        padding: 1rem 2rem 1rem;
     }
     .header_area .main-menu .navbar a {
-        padding: 0rem 6rem 0rem 0rem;
+        padding: 0rem 6rem 0rem 1.5rem;
     }
+    .header_area .navbar_fixed {
+        padding: 0rem;
+    }
+    .header_area .main-menu .navbar img {
+        width: 2rem;
+        height: 3.5rem;
+    }
+    
+    /* Banner */
+    .site-main .site-banner .site-title h1{
+        font-size: 4rem;
+    }
+    .site-main .site-banner .site-title h3 {
+        padding-top: 10%;
+    }
+    .site-main .site-banner .site-title .site-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .site-main .site-banner .row {
+        position: relative;
+    }
+    .site-main .site-banner .banner-image {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 4%;
+    }
+    .site-main .site-banner .banner-image > img {
+        padding: 1rem 0; 
+        width: 100%; 
+    }
+    /* About */
+    .site-main .about-area .container-about {
+        display: flex;
+        justify-content: center;
+    }
+    .site-main .about-area .about-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .site-main .about-area .container-about .about-image {
+        width: 50%;
+    }
+    .site-main .about-area .about-title h2 > span {
+        font: normal bold 28px/36px var(--roboto);
+    }
+    .site-main .about-area .about-title .paragraph {
+        width: 100% !important;
+    }
+    .site-main .about-area .about-title button  {
+        width: 50%;
+        align-self: center;
+    }
+    /* portfolio */
+
+    .react-fancybox .thumbnail img {
+        max-width: 478px;
+        width: 100%;
+    }
+    .react-fancybox .box .image-box {
+        width: 80%;
+    }
+    .react-fancybox .box  .image-box img:nth-child(2) {
+        width: 100%;
+    }
+
     /* contact */
     .site-main .contact-area .contact {
         width: 95%;
     }
     .site-main .contact-area .contact p {
         padding: 1rem 1rem 0rem;
+    }
+    /* footer */
+    footer.footer-area .social a > .i {
+        margin: 1rem 1rem;
+    }
+    footer.footer-area .copyrights {
+        padding-bottom: 1rem;
     }
 }
