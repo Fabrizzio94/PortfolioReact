@@ -21,7 +21,9 @@ const Banner = ({stickyRef}) => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 banner-image">
-                        <img src={require("../../media/banner/banner-image.png")} alt="banner-img" className="image-fluid"/>
+                        {/* <img src={require("../../media/banner/banner-image.png")} alt="banner-img" className="image-fluid"/> */}
+                        <img src={require("../../media/banner/kevin.jpg")} alt="banner-img" className="image-fluid"/>
+
                     </div>
                     </div>
                 </div>

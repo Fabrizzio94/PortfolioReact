@@ -31,7 +31,7 @@ const Portfolio = () => {
         }
     }
 
-    window.addEventListener("scroll", debounce(handleScroll, 16))
+    window.addEventListener("scroll", debounce(handleScroll, 30))
     return (
         <>
             <Header sticky={isSticky} />
