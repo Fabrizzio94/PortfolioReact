@@ -16,6 +16,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
     "jquery": "3.4.1",
     "popper.js": "^1.16.1",
@@ -28,9 +29,7 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node Server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
