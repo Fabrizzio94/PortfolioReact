@@ -23,9 +23,15 @@ const Portfolio = () => {
             : setSticky(false)
         }
     }
-    
+    const debounce = (func, wait) => {
+        let timeout
+        return (...args) => {
+          clearTimeout(timeout)
+          timeout = setTimeout(() => func.apply(this, args), wait)
+        }
+    }
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", debounce(handleScroll))
     return (
         <>
             <Header sticky={isSticky} />
